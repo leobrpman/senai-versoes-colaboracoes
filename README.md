@@ -6,3 +6,4 @@ Que depois desse, muitos outros projetos sejam realizados!
 Boa sorte!
 
 lembrei do comando: git commit
+lembrei do comando: git status
