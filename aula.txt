@@ -1,0 +1,67 @@
+12/08/2021 
+
+# Versionamento
+
+1. Criar diretório onde guardaremos o conteúdo que vamos trabalhar, o código etc
+2. Criar pasta _aula-12-08-21_ que iremos colocar no github
+3. Iniciar o Git Bash dentro da pasta criada _aula-12-08-21_
+4. git init 
+	- cria-se um repositório .git, que fica oculta (em exibir selecione itens ocultos e extensões de nomes de arquivos)
+5. Dentro da pasta _aula-12-08-21_ cria-se um arquivo txt
+6. git status
+	- verifica quais arquivos foram alterados, criados. Todo o histórico
+7. git add
+	Com o git add . ou git add <nome do arquivo> adicionamos ao histórico do projeto, registra a alteração 
+	Pode-se adicionar um a um ou vários arquivos ao mesmo tempo
+8. git commit
+	salva as alterações. 
+	git commit -m "comentário"
+9. git log
+	visualizar todas as alterações feitas pelo usuário
+10. Cria-se um repositório online no github
+12. No repositório local (pc) informar a pasta remota:
+	git remote add origin https://github...
+13. git push
+	publicar as alterações feitas no repositório local para o remoto:
+	- git push -u origin master <OU main>
+14. adicionar um READMe. Pode ser remoto ou local
+15. Caso entre em um erro, ou uma tela que nunca saia (Git commit with vim), para SAIR:
+	command>    :q
+	ou saia do terminal :p
+16. Para limpar Ctrl + l ou clear
+17. Gerar o SHA1 (https://www.youtube.com/watch?v=DMtFhACPnTY)
+	echo 'conteudo' | git hash-object --stdin
+18. git log mostra todos os commits e o git show mostra mais detalhes do ultimo commit feito
+19. git show --help
+20. git checkout id (id do commit encontrado no git log) para encontrar um commit específico
+21. git stash ignora o que foi feito antes de comitar (ignore untracked files)
+22. git restore
+23. Stackoverflow  para dúvidas
+24. git pull
+	baixar a atualização do repositório remoto	
+25. Criar arquivo .gitignore
+	o git ignore é um documento que gerencia arquivos que não se deseja publicar na nuvem
+	- Cria-se um bloco de notas (sem o txt), com a extensão .gitignore
+	- dentro deste arquivo coloca <nomedoarquivo.txt> os arquivos que não serão publicados
+	- verifica-se se está correto com o git status, só aparecerá o arquivo .gitignore
+	- git add .
+	- git commit -m "gitignore"
+	- git push -u origin main
+26. Criar uma branch
+	git checkout -b <nova_branch>
+	- vai da branch main para <nova_branch>
+	- adiciona tudo ao github	git push origin <nova_branch>
+27. Para sair da branch é
+	git checkout main
+	git checkout master
+28. Unificar os conteúdos das branchs
+	git merge <nome_da_branch>
+29. Arrumar conflitos dentro dos arquivos. Faz add, commit e push
+
+30. Adicionando TAGs
+	volta para a main/master (git checkout main OU  git checkout master)
+	- git tag -a v1.0 -m "minha tag"
+	- git tag
+	- git show v1.0
+	- git push origin --tags
+31. Insert ou shift + insert> cola no git bash
