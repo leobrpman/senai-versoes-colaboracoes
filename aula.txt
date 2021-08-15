@@ -2,6 +2,8 @@
 
 # Versionamento
 
+0. git config --global user.name "nome de usuário"
+   git config --global user.email "email@gmail.com"
 1. Criar diretório onde guardaremos o conteúdo que vamos trabalhar, o código etc
 2. Criar pasta _aula-12-08-21_ que iremos colocar no github
 3. Iniciar o Git Bash dentro da pasta criada _aula-12-08-21_
